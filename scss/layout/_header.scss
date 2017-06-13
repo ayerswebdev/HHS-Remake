@@ -2,7 +2,6 @@ header {
   width: 100%;
   height: 5em;
   background: $primary;
-  border-bottom: 2px solid $dark;
 
   display: flex;
   flex-flow: row wrap;
@@ -17,16 +16,11 @@ header {
 .header-item {
   width: 10%;
   height: 100%;
-  color: $light;
   font-size: 1.2em;
 
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.grow {
-  flex-grow: 1;
 }
 
 .header-item:hover {

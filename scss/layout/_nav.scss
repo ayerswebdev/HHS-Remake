@@ -12,11 +12,42 @@ nav {
 }
 
 .nav-item {
-  width: 100%;
   height: 2em;
   text-align: left;
 }
 
 .nav-item:hover {
   background: $primary-darkened;
+}
+
+.nav-img {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.yb-order {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: $dark;
+  background: white;
+  margin: 0;
+}
+
+.yb-order:hover {
+  background: $light;
+  color: $dark;
+}
+
+#yb-hs, #yb-jh {
+  position: relative;
+  left: 25%;
+}
+
+.nav-link {
+  width: 40%;
+}
+
+.fb {
+  width: 100%;
 }

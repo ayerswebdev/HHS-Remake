@@ -9,7 +9,7 @@ a {
   color: $light;
 }
 
-a:hover {
+a:hover, a:focus, a:active {
   color: $light;
   text-decoration: none;
 }
@@ -17,4 +17,25 @@ a:hover {
 h1 {
   font-size: 1.6em;
   font-family: 'Lustria', serif;
+}
+
+blockquote {
+  font-size: 1.2em;
+}
+
+.inline {
+  display: inline-block;
+  margin-right: -5px;
+}
+
+.extra-space {
+  margin-top: 2em;
+}
+
+.justify {
+  text-align: left;
+}
+
+.fourteen-point {
+  font-size: 0.7em;
 }
