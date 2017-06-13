@@ -1,0 +1,17 @@
+.horizontal-flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.vertical-flex {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.main-center {
+  justify-content: center;
+}
+
+.cross-center {
+  align-items: center;
+}

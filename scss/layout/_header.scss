@@ -2,6 +2,7 @@ header {
   width: 100%;
   height: 5em;
   background: $primary;
+  border-bottom: 2px solid $dark;
 
   display: flex;
   flex-flow: row wrap;
@@ -33,7 +34,7 @@ header {
 }
 
 .selected {
-  border-bottom: 4px solid $light;
+  border-bottom: 2px solid $light;
 }
 
 .logo {
