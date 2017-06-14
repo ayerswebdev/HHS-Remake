@@ -97,7 +97,7 @@ footer {
   height: 100%;
   font-size: 0.375em; }
 
-@media all and (min-width: 350px) {
+@media all and (min-width: 500px) {
   .footer-item {
     font-size: 0.5em; } }
 @media all and (min-width: 1024px) {
