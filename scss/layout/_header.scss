@@ -6,11 +6,6 @@ header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 100;
 }
 
 .header-item {
@@ -46,6 +41,11 @@ header {
   header {
     flex-flow: row wrap;
     height: 5em;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
   }
 
   .header-item {

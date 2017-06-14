@@ -1,21 +1,33 @@
-.content {
-  margin-top: 11em;
-}
-
 .content-side {
-  width: 20%;
+  width: 100%;
   background: $primary;
   color: $light;
 }
 
 .content-center {
-  width: 60%;
+  width: 100%;
   padding-left: 3em;
   padding-right: 3em;
+}
+
+#right {
+  display: none;
 }
 
 @media all and (min-width: 1024px) {
   .content {
     margin-top: 5em;
+  }
+
+  #right {
+    display: block;
+  }
+
+  .content-side {
+    width: 20%;
+  }
+
+  .content-center {
+    width: 60%;
   }
 }
