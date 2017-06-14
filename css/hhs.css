@@ -95,8 +95,11 @@ footer {
 
 .footer-item {
   height: 100%;
-  font-size: 0.5em; }
+  font-size: 0.375em; }
 
+@media all and (min-width: 350px) {
+  .footer-item {
+    font-size: 0.5em; } }
 @media all and (min-width: 1024px) {
   .footer-item {
     font-size: 0.8em; } }
@@ -128,7 +131,7 @@ nav {
   width: 100%; }
 
 .nav-item {
-  height: 2em;
+  height: 3em;
   text-align: center;
   font-size: 0.75em; }
 
@@ -164,7 +167,8 @@ nav {
 @media all and (min-width: 1024px) {
   .nav-item {
     text-align: left;
-    font-size: 1em; }
+    font-size: 1em;
+    height: 2em; }
 
   nav h1 {
     text-align: left;
