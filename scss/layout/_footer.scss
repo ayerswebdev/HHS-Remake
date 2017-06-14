@@ -7,7 +7,11 @@ footer {
 
 .footer-item {
   height: 100%;
-  font-size: 0.8em;
+  font-size: 0.5em;
+}
 
-  display: flex;
+@media all and (min-width: 1024px) {
+  .footer-item {
+    font-size: 0.8em;
+  }
 }

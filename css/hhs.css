@@ -95,9 +95,11 @@ footer {
 
 .footer-item {
   height: 100%;
-  font-size: 0.8em;
-  display: flex; }
+  font-size: 0.5em; }
 
+@media all and (min-width: 1024px) {
+  .footer-item {
+    font-size: 0.8em; } }
 .horizontal-flex {
   display: flex;
   flex-flow: row wrap; }
@@ -173,5 +175,9 @@ nav {
   width: 60%;
   padding-left: 3em;
   padding-right: 3em; }
+
+@media all and (min-width: 1024px) {
+  .content {
+    margin-top: 5em; } }
 
 /*# sourceMappingURL=hhs.css.map */

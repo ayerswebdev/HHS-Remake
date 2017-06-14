@@ -13,3 +13,9 @@
   padding-left: 3em;
   padding-right: 3em;
 }
+
+@media all and (min-width: 1024px) {
+  .content {
+    margin-top: 5em;
+  }
+}
