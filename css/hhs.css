@@ -1,7 +1,7 @@
 body {
   background: #262626;
   color: #e0e0e0;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Raleway', sans-serif; }
 
 a {
@@ -28,15 +28,18 @@ blockquote {
 .justify {
   text-align: left; }
 
-.fourteen-point {
-  font-size: 0.7em; }
+.small-font {
+  font-size: 14px; }
 
+@media all and (min-width: 1024px) {
+  body {
+    font-size: 20px; } }
 header {
   width: 100%;
-  height: 5em;
+  height: 11em;
   background: #660000;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-items: center;
   position: fixed;
   top: 0;
@@ -44,9 +47,9 @@ header {
   z-index: 100; }
 
 .header-item {
-  width: 10%;
-  height: 100%;
-  font-size: 1.2em;
+  width: 100%;
+  height: 1.5em;
+  font-size: 1em;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -55,12 +58,35 @@ header {
   background: #4c0000; }
 
 .selected {
-  border-bottom: 2px solid #e0e0e0; }
+  background: #e0e0e0;
+  color: #262626; }
+
+.selected:hover {
+  background: #c9c9c9;
+  color: #262626; }
 
 .logo {
-  height: 5em;
-  padding-left: 2em; }
+  height: 3em;
+  align-self: center; }
 
+@media all and (min-width: 1024px) {
+  header {
+    flex-flow: row wrap;
+    height: 5em; }
+
+  .header-item {
+    width: 10%;
+    height: 100%;
+    font-size: 1.2em; }
+
+  .logo {
+    height: 5em;
+    padding-left: 2em; }
+
+  .selected {
+    background: #660000;
+    color: #e0e0e0;
+    border-bottom: 2px solid #e0e0e0; } }
 footer {
   width: 100%;
   height: 8em;
@@ -100,7 +126,8 @@ nav {
 
 .nav-item {
   height: 2em;
-  text-align: left; }
+  text-align: left;
+  font-size: 0.75em; }
 
 .nav-item:hover {
   background: #4c0000; }
@@ -131,8 +158,11 @@ nav {
 .fb {
   width: 100%; }
 
+@media all and (min-width: 1024px) {
+  .nav-item {
+    font-size: 1em; } }
 .content {
-  margin-top: 5em; }
+  margin-top: 11em; }
 
 .content-side {
   width: 20%;

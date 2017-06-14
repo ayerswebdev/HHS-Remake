@@ -1,7 +1,7 @@
 body {
   background: $dark;
   color: $light;
-  font-size: 20px;
+  font-size: 16px;
   font-family: 'Raleway', sans-serif;
 }
 
@@ -36,6 +36,12 @@ blockquote {
   text-align: left;
 }
 
-.fourteen-point {
-  font-size: 0.7em;
+.small-font {
+  font-size: 14px;
+}
+
+@media all and (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
 }

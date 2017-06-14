@@ -14,6 +14,7 @@ nav {
 .nav-item {
   height: 2em;
   text-align: left;
+  font-size: 0.75em;
 }
 
 .nav-item:hover {
@@ -50,4 +51,10 @@ nav {
 
 .fb {
   width: 100%;
+}
+
+@media all and (min-width: 1024px) {
+  .nav-item {
+    font-size: 1em;
+  }
 }
