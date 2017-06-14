@@ -1,11 +1,3 @@
-nav {
-  width: 100%;
-
-  h1 {
-    text-align: center;
-  }
-}
-
 .no-bullet {
   list-style: none;
   padding-left: 0;
@@ -13,13 +5,29 @@ nav {
 }
 
 .nav-item {
-  height: 3em;
   text-align: center;
-  font-size: 0.75em;
+  font-size: 1em;
+  height: 2em;
 }
 
 .nav-item:hover {
   background: $primary-darkened;
+}
+
+nav {
+  width: 100%;
+
+  h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  h1:hover {
+    background: $primary-darkened;
+    cursor: pointer;
+  }
 }
 
 .nav-img {
@@ -33,12 +41,18 @@ nav {
   text-align: center;
   color: $dark;
   background: white;
-  margin: 0;
+  margin-bottom: 2em;
+  font-size: 0.5em;
+  padding-top: 1.1em;
 }
 
 .yb-order:hover {
   background: $light;
   color: $dark;
+}
+
+#ads {
+  display: none;
 }
 
 #yb-hs, #yb-jh {
@@ -56,17 +70,40 @@ nav {
 
 @media all and (min-width: 1024px) {
   .nav-item {
-    text-align: left;
-    font-size: 1em;
+    text-align: right;
+    padding-right: 2em;
+    font-size: 0.8em;
     height: 2em;
   }
 
   nav h1 {
-    text-align: left;
-    padding-left: 1em;
+    margin-top: 0.5em;
+    text-align: right;
+    font-size: 1.6em;
+    padding-right: 1em;
+    font-family: 'Lustria', serif;
   }
 
-  .no-bullet {
-    padding-left: 2em;
+  nav h1:hover {
+    background: $primary;
+    cursor: default;
+  }
+
+  #ql-dropdown {
+    display: block !important;
+  }
+
+  #ads {
+    display: block;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .nav-item {
+    font-size: 1em;
+  }
+
+  .yb-order {
+    font-size: 0.7em;
   }
 }

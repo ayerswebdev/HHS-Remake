@@ -14,8 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lustria|Raleway" rel="stylesheet">
 
     <!--Importing Custom Files-->
-    <link rel="stylesheet" href="css/hhs.css">
     <script src="js/hhs.js"></script>
+    <link rel="stylesheet" href="css/hhs.css">
 
     <title>Hamilton Schools</title>
   </head>
@@ -60,40 +60,45 @@
     <div class="horizontal-flex content">
       <div class="content-side">
         <nav>
-          <h1>Quick Links</h1>
-          <ul class="no-bullet">
-            <a href="#" target="_blank"><li class="nav-item">Jr./Sr. High School Home</li></a>
-            <a href="#" target="_blank"><li class="nav-item">Elementary School Home</li></a>
+          <h1 id="ql-btn">Quick Links <span id="ql-arrow" class="mobile-only fa fa-caret-down"></span></h1>
+          <ul class="no-bullet desktop-only" id="ql-dropdown">
+            <a href="#" target="_blank"><li class="nav-item">Jr./Sr. High School</li></a>
+            <a href="#" target="_blank"><li class="nav-item">Elementary School</li></a>
             <a href="https://lumen.hhs328.com/lumen/signin" target="_blank"><li class="nav-item">Lumen Login</li></a>
-           <a href="#" target="_blank"><li class="nav-item">Important Forms for Parents</li></a>
+           <a href="#" target="_blank"><li class="nav-item">Important Parent Forms</li></a>
             <a href="#" target="_blank"><li class="nav-item">Athletics</li></a>
             <a href="#" target="_blank"><li class="nav-item">Hamilton Band</li></a>
             <a href="#" target="_blank"><li class="nav-item">Announcements</li></a>
-            <a href="#" target="_blank"><li class="nav-item">Menus</li></a>
+            <a href="#" target="_blank"><li class="nav-item">Menus <span class="desktop-only fa fa-caret-right"></span><span class="mobile-only fa fa-caret-down"></span></li></a>
             <a href="#" target="_blank"><li class="nav-item">Staff Directory</li></a>
-            <a href="#" target="_blank"><li class="nav-item">Work for Hamilton Schools</li></a>
+            <a href="#" target="_blank"><li class="nav-item">Work for Us</li></a>
             <a href="#" target="_blank"><li class="nav-item">Community</li></a>
             <a href="#" target="_blank"><li class="nav-item">Cardinal Foundation</li></a>
+            <a href="http://www.jostens.com/apps/store/customer/1075054/Hamilton-High-School/" target="_blank" class="mobile-only"><li class="nav-item">HS Yearbook Order</li></a>
+            <a href="https://www.treering.com/createAccount?PassCode=1014468380632437" target="_blank" class="mobile-only"><li class="nav-item">JH Yearbook Order</li></a>
+            <a href="assets/pdf/sf-application.pdf" target="_blank" class="mobile-only"><li class="nav-item">School First Card Information</li></a>
           </ul>
         </nav>
 
-        <a href="assets/pdf/sf-application.pdf" target="_blank">
-          <img class="nav-img" src="assets/img/schoolfirst.jpg" alt="School First Card Information" />
-        </a>
+        <div id="ads">
+          <a href="assets/pdf/sf-application.pdf" target="_blank">
+            <img class="nav-img" src="assets/img/schoolfirst.jpg" alt="School First Card Information" />
+          </a>
 
-        <img class="nav-img extra-space" src="assets/img/yearbook-order.jpg" alt="Order a Yearbook" />
+          <img class="nav-img extra-space" src="assets/img/yearbook-order.jpg" alt="Order a Yearbook" />
 
-        <a class="nav-link inline" href="http://www.jostens.com/apps/store/customer/1075054/Hamilton-High-School/" target="_blank">
-          <div class="yb-order" id="yb-hs">
-            <p>High School</p>
-          </div>
-        </a>
+          <a class="nav-link inline" href="http://www.jostens.com/apps/store/customer/1075054/Hamilton-High-School/" target="_blank">
+            <div class="yb-order" id="yb-hs">
+              <p>High School</p>
+            </div>
+          </a>
 
-        <a class="nav-link inline" href="https://www.treering.com/createAccount?PassCode=1014468380632437" target="_blank">
-          <div class="yb-order" id="yb-jh">
-            <p>Jr. High</p>
-          </div>
-        </a>
+          <a class="nav-link inline" href="https://www.treering.com/createAccount?PassCode=1014468380632437" target="_blank">
+            <div class="yb-order" id="yb-jh">
+              <p>Jr. High</p>
+            </div>
+          </a>
+        </div>
       </div>
 
       <div class="content-center vertical-flex cross-center">

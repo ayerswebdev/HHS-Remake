@@ -20,7 +20,7 @@ blockquote {
 
 .inline {
   display: inline-block;
-  margin-right: -5px; }
+  margin-right: -6px; }
 
 .extra-space {
   margin-top: 2em; }
@@ -31,12 +31,21 @@ blockquote {
 .small-font {
   font-size: 14px; }
 
+.desktop-only {
+  display: none; }
+
 @media all and (min-width: 1024px) {
   body {
-    font-size: 20px; } }
+    font-size: 20px; }
+
+  .mobile-only {
+    display: none; }
+
+  .desktop-only {
+    display: inline-block; } }
 header {
   width: 100%;
-  height: 12em;
+  height: 16.5em;
   background: #660000;
   display: flex;
   flex-flow: column wrap;
@@ -45,7 +54,7 @@ header {
 .header-item {
   width: 100%;
   height: 1.5em;
-  font-size: 1em;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -77,7 +86,7 @@ header {
   .header-item {
     width: 10%;
     height: 100%;
-    font-size: 1.2em; }
+    font-size: 0.9em; }
 
   .logo {
     height: 5em;
@@ -87,6 +96,9 @@ header {
     background: #660000;
     color: #e0e0e0;
     border-bottom: 2px solid #e0e0e0; } }
+@media all and (min-width: 1600px) {
+  .header-item {
+    font-size: 1.2em; } }
 footer {
   width: 100%;
   height: 8em;
@@ -120,23 +132,29 @@ footer {
 .grow {
   flex-grow: 1; }
 
-nav {
-  width: 100%; }
-  nav h1 {
-    text-align: center; }
-
 .no-bullet {
   list-style: none;
   padding-left: 0;
   width: 100%; }
 
 .nav-item {
-  height: 3em;
   text-align: center;
-  font-size: 0.75em; }
+  font-size: 1em;
+  height: 2em; }
 
 .nav-item:hover {
   background: #4c0000; }
+
+nav {
+  width: 100%; }
+  nav h1 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Raleway', sans-serif; }
+  nav h1:hover {
+    background: #4c0000;
+    cursor: pointer; }
 
 .nav-img {
   width: 60%;
@@ -148,11 +166,16 @@ nav {
   text-align: center;
   color: #262626;
   background: white;
-  margin: 0; }
+  margin-bottom: 2em;
+  font-size: 0.5em;
+  padding-top: 1.1em; }
 
 .yb-order:hover {
   background: #e0e0e0;
   color: #262626; }
+
+#ads {
+  display: none; }
 
 #yb-hs, #yb-jh {
   position: relative;
@@ -166,16 +189,33 @@ nav {
 
 @media all and (min-width: 1024px) {
   .nav-item {
-    text-align: left;
-    font-size: 1em;
+    text-align: right;
+    padding-right: 2em;
+    font-size: 0.8em;
     height: 2em; }
 
   nav h1 {
-    text-align: left;
-    padding-left: 1em; }
+    margin-top: 0.5em;
+    text-align: right;
+    font-size: 1.6em;
+    padding-right: 1em;
+    font-family: 'Lustria', serif; }
 
-  .no-bullet {
-    padding-left: 2em; } }
+  nav h1:hover {
+    background: #660000;
+    cursor: default; }
+
+  #ql-dropdown {
+    display: block !important; }
+
+  #ads {
+    display: block; } }
+@media all and (min-width: 1920px) {
+  .nav-item {
+    font-size: 1em; }
+
+  .yb-order {
+    font-size: 0.7em; } }
 .content-side {
   width: 100%;
   background: #660000;
