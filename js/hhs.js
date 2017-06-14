@@ -1,13 +1,23 @@
 $(document).ready(function() {
   $("#year").html(new Date().getFullYear());
 
-  $("#ql-btn").click(function() {
-    if(!window.matchMedia("(min-width: 1024px)").matches) {
-      $("#ql-dropdown").slideToggle(400);
-      setTimeout(function() {
-        $("#ql-arrow").toggleClass("fa-caret-down");
-        $("#ql-arrow").toggleClass("fa-caret-up");
-      }, 400)
-    }
-  });
+  dropdownEvent("ql");
+  dropdownEvent("parents");
+  dropdownEvent("staff");
+  dropdownEvent("boe");
+  dropdownEvent("menus");
 });
+
+function toggleArrow(id) {
+  setTimeout(function() {
+    $("#" + id + "-arrow").toggleClass("fa-caret-down");
+    $("#" + id + "-arrow").toggleClass("fa-caret-up");
+  }, 400);
+}
+
+function dropdownEvent(id) {
+  $("#" + id + "-btn").click(function() {
+    $("#" + id + "-dropdown").slideToggle(400);
+    toggleArrow(id)
+  });
+}

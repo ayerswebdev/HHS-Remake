@@ -25,36 +25,43 @@
       <div class="grow">
         <a href="#"><img class="logo" img src="assets/img/logo.gif" alt="logo"/></a>
       </div>
-      <a href="#" class="header-item selected">
-        <div id="home-btn">
-          <p class="text-center">Home</p>
-        </div>
-      </a>
-      <a href="#" class="header-item">
-        <div id="parents-btn">
-          <p class="text-center">Parents <span class="fa fa-caret-down"></span></p>
-        </div>
-      </a>
-      <a href="#" class="header-item">
-        <div id="staff-btn">
-          <p class="text-center">Staff <span class="fa fa-caret-down"></span></p>
-        </div>
-      </a>
-      <a href="#" class="header-item">
-        <div id="calendar-btn">
-          <p class="text-center">Calendar</p>
-        </div>
-      </a>
-      <a href="#" class="header-item">
-        <div id="boe-btn">
-          <p class="text-center">Board of Education <span class="fa fa-caret-down"></span></p>
-        </div>
-      </a>
-      <a href="#" class="header-item">
-        <div id="contact-btn">
-          <p class="text-center">Contact</p>
-        </div>
-      </a>
+
+      <div class="header-item">
+        <a class="selected" id="home-btn" href="#"><p>Home</p></a>
+      </div>
+
+      <div class="header-item">
+        <a id="parents-btn" href="#"><p>Parents <span id="parents-arrow" class="fa fa-caret-down"></span></p></a>
+      </div>
+
+      <div class="header-dropdown" id="parents-dropdown">
+        <ul class="no-bullet">
+          <a href="#" id="forms-btn"><li class="header-item"><p>Important Forms</p></li></a>
+          <a href="https://lumen.hhs328.com/lumen/signin" target="_blank" id="lumen-login-btn"><li class="header-item"><p>Lumen Login</p></li></a>
+          <a href="#" id="lumen-help-btn"><li class="header-item"><p>Lumen Help</p></li></a>
+          <a href="#" id="registration-btn"><li class="header-item"><p>Registration</p></li></a>
+        </ul>
+      </div>
+
+      <div class="header-item">
+        <a href="#" id="staff-btn"><p class="text-center">Staff <span id="staff-arrow" class="fa fa-caret-down"></span></p></a>
+      </div>
+
+      <div class="header-item">
+        <a href="#">
+          <div id="calendar-btn">
+            <p class="text-center">Calendar</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="header-item">
+        <a id="boe-btn" href="#"><p class="text-center">Board of Education <span id="boe-arrow" class="fa fa-caret-down"></span></p></a>
+      </div>
+
+      <div class="header-item">
+        <a id="contact-btn" href="#"><p class="text-center">Contact</p></a>
+      </div>
     </header>
 
     <div class="horizontal-flex content">
@@ -69,7 +76,7 @@
             <a href="#" target="_blank"><li class="nav-item">Athletics</li></a>
             <a href="#" target="_blank"><li class="nav-item">Hamilton Band</li></a>
             <a href="#" target="_blank"><li class="nav-item">Announcements</li></a>
-            <a href="#" target="_blank"><li class="nav-item">Menus <span class="desktop-only fa fa-caret-right"></span><span class="mobile-only fa fa-caret-down"></span></li></a>
+            <a id="menus-btn" href="#"><li class="nav-item">Menus <span id="menus-arrow" class="desktop-only fa fa-caret-right"></span><span class="mobile-only fa fa-caret-down"></span></li></a>
             <a href="#" target="_blank"><li class="nav-item">Staff Directory</li></a>
             <a href="#" target="_blank"><li class="nav-item">Work for Us</li></a>
             <a href="#" target="_blank"><li class="nav-item">Community</li></a>

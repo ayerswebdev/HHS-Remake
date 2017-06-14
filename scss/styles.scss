@@ -2,10 +2,10 @@
 @import "base/_base.scss";
 @import "base/_mixins.scss";
 
-@import "layout/_header.scss";
+@import "modules/_buttons.scss";
+@import "modules/_blocks.scss";
+
 @import "layout/_footer.scss";
 @import "layout/_flex.scss";
 @import "layout/_nav.scss";
-
-@import "modules/_buttons.scss";
-@import "modules/_blocks.scss";
+@import "layout/_header.scss";
